@@ -3,7 +3,7 @@
 
 .l-section-initial {
     align-items: flex-start;
-    background: url("../img/images/driver-image.jpg") no-repeat center center / cover;
+    background: url("../img/images/driver-image.jpg") no-repeat center center / cover fixed;
     display: flex;
     height: 500px;
     padding: 5rem 0 0 5rem;
@@ -15,7 +15,8 @@
 }
 .l-section-initial .m-call-to-action-1 p {
     color: var(--color-white);
-    font: normal normal normal 1.5rem / 2rem 'Lexend', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
     margin: 0.5rem 0.5rem 1.5rem 0.5rem;
 }
 .l-section-initial .m-call-to-action-1 .m-buttons-cta .m-button-see-more {
@@ -39,7 +40,8 @@
 .l-section-initial .m-call-to-action-1 .m-buttons-cta .m-button-contact,
 .l-section-features .m-year-of-experience .m-year-of-experience-text .m-button-see-more  {
     border-radius: 5px;
-    font: normal normal 600 1rem / 1 'Lexend', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     text-align: center;
@@ -55,6 +57,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1300px;
     padding: 2rem 2rem 3rem 2rem;
 }
 .l-section-features .m-group-of-cards .m-card {
@@ -76,7 +80,8 @@
 }
 .l-section-features .m-group-of-cards .m-card p {
     color: var(--color-blue);
-    font: normal normal 600 1.25rem / 1 'Lexend', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
     padding: 0.5rem 0;
     text-align: center;
 }
@@ -124,7 +129,9 @@
     text-align: center;
     margin: 1rem 0 0 0;
 }
-.l-section-features .m-year-of-experience-text { padding: 0 0 2rem 0; }
+.l-section-features .m-year-of-experience-text { 
+    padding: 0 0 2rem 0; 
+}
 .l-section-features .m-year-of-experience .m-year-of-experience-text h3 {
     padding: 0 0 0.25rem 0;
     text-align: left; 
@@ -148,16 +155,17 @@
 }
 
 .l-section-slanted-banner {
-    align-items: flex-start;
     background-color: var(--color-blue);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 5rem;
     transform: skewY(-2deg);
 }
-.l-section-slanted-banner article {
-    margin: 1rem;
+.l-section-slanted-banner .m-slanted-banner-group {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1300px;
     transform: skewY(2deg); 
 }
 .l-section-slanted-banner .m-banner-text h4 {
@@ -208,11 +216,16 @@
     width: -moz-fit-content;
     width: fit-content;
 }
-.l-section-team .m-group-of-cards-3 .m-card-3:nth-child(odd) { margin: 3rem 0 0 0; }
-.l-section-team .m-group-of-cards-3 .m-card-3 img { margin: 0 0.5rem; }
+.l-section-team .m-group-of-cards-3 .m-card-3:nth-child(odd) { 
+    margin: 3rem 0 0 0; 
+}
+.l-section-team .m-group-of-cards-3 .m-card-3 img { 
+    margin: 0 0.5rem; 
+}
 .l-section-team .m-group-of-cards-3 .m-card-3 .m-name {
     color: var(--color-blue);
-    font: normal normal 700 1.25rem / 1 'Lexend', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
     margin: 0.5rem auto 0 auto;
     text-align: center;
     width: -moz-fit-content;
@@ -220,7 +233,8 @@
 }
 .l-section-team .m-group-of-cards-3 .m-card-3 .m-profession {
     color: var(--color-pink);
-    font: normal normal 600 1.2rem / 1 'Lexend', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
     margin: 0 auto;
     text-align: center;
     width: -moz-fit-content;
@@ -254,11 +268,19 @@
         margin: 0 auto;
     }
     .l-section-initial .m-call-to-action-1 h1,
-    .l-section-initial .m-call-to-action-1 p { text-align: center; }
-    .l-section-initial .m-call-to-action-1 h1 { font-size: 2.5rem; }
-    .l-section-initial .m-call-to-action-1 p { font-size: 1rem; }
+    .l-section-initial .m-call-to-action-1 p { 
+        text-align: center; 
+    }
+    .l-section-initial .m-call-to-action-1 h1 { 
+        font-size: 2.5rem; 
+    }
+    .l-section-initial .m-call-to-action-1 p { 
+        font-size: 1rem; 
+    }
 
-    .l-section-features .m-group-of-cards { padding: 2rem 1rem; }
+    .l-section-features .m-group-of-cards { 
+        padding: 2rem 1rem; 
+    }
     .l-section-features .m-year-of-experience { 
         padding: 0 1rem;
         justify-content: center; 
@@ -269,7 +291,11 @@
         margin: 1rem 0.5rem;
     }
 
-    .l-section-slanted-banner { padding: 1rem; }
+    .l-section-slanted-banner { 
+        padding: 1rem; 
+    }
     .l-section-team .m-group-of-cards-3 .m-card-3,
-    .l-section-team .m-group-of-cards-3 .m-card-3:nth-child(odd) { margin: 1rem 0 0 0; }
+    .l-section-team .m-group-of-cards-3 .m-card-3:nth-child(odd) { 
+        margin: 1rem 0 0 0; 
+    }
 }
