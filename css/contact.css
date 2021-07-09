@@ -1,0 +1,54 @@
+@import url(./global-settings.css);
+/* The styles/settings of HEADER and FOOTER can be found in the global-settings.css file */
+
+.l-section-initial {
+    align-items: flex-start;
+    background: url("../img/images/cars-image.jpg") no-repeat center center / cover fixed;
+    border-bottom: 15px solid var(--color-pink);
+    border-radius: 0 0 30% 0;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 5rem 0 0 5rem;
+}
+.l-section-initial h1 {
+    color: var(--color-white);
+    font-size: 6rem;
+}
+.l-section-initial hr {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    margin-left: 0.5rem;
+}
+.l-section-initial .crumb-path {
+    background-color: var(--matte-pink);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.l-section-initial .crumb-path p {
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+.l-section-initial .crumb-path p span {
+    font-family: monospace;
+    font-weight: 600;
+}
+.l-section-initial .crumb-path p a {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .l-section-initial {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .l-section-initial h1 {
+        font-size: 3rem;
+    }
+    .l-section-initial hr {
+        margin: 0 auto;
+    }
+}

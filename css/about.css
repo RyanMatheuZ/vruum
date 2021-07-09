@@ -1,0 +1,110 @@
+@import url(./global-settings.css);
+/* The styles/settings of HEADER and FOOTER can be found in the global-settings.css file */
+
+.l-section-initial {
+    align-items: flex-start;
+    background: url("../img/images/city-image.jpg") no-repeat center center / cover fixed;
+    border-bottom: 15px solid var(--color-pink);
+    border-radius: 0 0 30% 0;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 5rem 0 0 5rem;
+}
+.l-section-initial h1 {
+    color: var(--color-white);
+    font-size: 6rem;
+}
+.l-section-initial hr {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    margin-left: 0.5rem;
+}
+.l-section-initial .crumb-path {
+    background-color: var(--matte-pink);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.l-section-initial .crumb-path p {
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+.l-section-initial .crumb-path p span {
+    font-family: monospace;
+    font-weight: 600;
+}
+.l-section-initial .crumb-path p a {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.l-section-about-us {
+    background-color: var(--colo-gray);
+    padding: 2rem 0;
+}
+.l-section-about-us .m-about-us-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1.5rem auto 0 auto;
+    max-width: 1300px;
+}
+.l-section-about-us .m-about-us-content .m-about-us-text {
+    margin: 0 0.5rem;
+    width: 600px;
+}
+.l-section-about-us .m-about-us-content .m-about-us-text p {
+    border-left: 4px solid var(--color-pink);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 1rem;
+}
+.l-section-about-us .m-about-us-content .m-about-us-text p a {
+    font-weight: 600;
+}
+.l-section-about-us .m-about-us-content .m-about-us-image .m-image {
+    margin: 0 0.5rem;
+}
+.l-section-about-us .m-about-us-content .m-about-us-image .m-image img {
+    height: 100%;
+    width: 100%;
+}
+.l-section-about-us .m-about-us-content .m-about-us-image .m-name {
+    color: var(--color-blue);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.5rem auto 0 auto;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.l-section-about-us .m-about-us-content .m-about-us-image .m-profession {
+    color: var(--color-pink);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+@media (max-width: 800px) {
+    .l-section-initial {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .l-section-initial h1 {
+        font-size: 3rem;
+    }
+    .l-section-initial hr {
+        margin: 0 auto;
+    }
+
+    .l-section-about-us .m-about-us-content .m-about-us-text p {
+        font-size: 1rem;
+    }
+}

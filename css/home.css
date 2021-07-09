@@ -4,9 +4,11 @@
 .l-section-initial {
     align-items: flex-start;
     background: url("../img/images/driver-image.jpg") no-repeat center center / cover fixed;
+    border-bottom: 15px solid var(--color-pink);
+    border-radius: 0 0 30% 0;
     display: flex;
-    height: 500px;
-    padding: 5rem 0 0 5rem;
+    height: 400px;
+    padding: 2.5rem 0 0 5rem;
 }
 .l-section-initial .m-call-to-action-1 h1 {
     color: var(--color-white);
@@ -292,7 +294,7 @@
     }
 
     .l-section-slanted-banner { 
-        padding: 1rem; 
+        padding: 2rem 1rem; 
     }
     .l-section-team .m-group-of-cards-3 .m-card-3,
     .l-section-team .m-group-of-cards-3 .m-card-3:nth-child(odd) { 

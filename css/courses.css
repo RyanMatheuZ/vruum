@@ -3,10 +3,12 @@
 
 .l-section-initial {
     align-items: flex-start;
-    background: url("../img/images/road-image.jpg") no-repeat center center / cover fixed;
+    background: url("../img/images/street-image.jpg") no-repeat center center / cover fixed;
+    border-bottom: 15px solid var(--color-pink);
+    border-radius: 0 0 30% 0;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 400px;
     padding: 5rem 0 0 5rem;
 }
 .l-section-initial h1 {
