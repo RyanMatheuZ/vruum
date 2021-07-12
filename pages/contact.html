@@ -60,9 +60,52 @@
                 </p>
             </article>
         </section>
+
+        <section class="l-section-contact">
+            <h2>Formulário</h2>
+
+            <hr class="m-horizontal-line">
+
+            <h3>Restou alguma dúvida? Contate-nos!</h3>
+
+            <p class="m-stylized-text">Mande para nós uma mensagem de <br> dúvidas, feedback, ...</p>
+
+            <form id="form" class="m-form">
+                <article class="m-form-image">
+                    <img src="../img/images/form-image.svg" alt="Formulário de contato">
+                </article>
+
+                <article class="m-form-data">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" placeholder="João" id="name">
+                    </div>
+    
+                    <div>
+                        <label for="surname">Sobrenome:</label>
+                        <input type="text" placeholder="Silva" id="surname">
+                    </div>
+    
+                    <div>
+                        <label for="message">Mensagem:</label>
+                        <textarea placeholder="Gostaria de saber..." id="message"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar">
+
+                    <div id="result" class="result">
+                        <img src="../img/icons/error-icon.svg" alt="Resultado">
+                    </div>
+                </article>
+            </form>
+        </section>
+
+        <section class="l-section-localization-map">
+			<iframe title="Localização da Autoescola" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1854.7702217882254!2d-48.36402144614445!3d-21.60385438198794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b91fd15f4bd28d%3A0x718002a2e98730ca!2sR.%20Rui%20Barbosa%2C%20Mat%C3%A3o%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623309608884!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+		</section>
     </main>
 
-    <!-- <footer class="l-footer">
+    <footer class="l-footer">
         <article class="m-logo">
             <a href="../index.html" target="_blank">
                 <img src="../img/logo/vruum-white-logo.svg" alt="Logo Vruum">
@@ -101,9 +144,10 @@
         <div class="m-copyright">
             <p>&copy; 2021 Vruum - Todos os direitos reservados.</p>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="../js/animations.js"></script>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>

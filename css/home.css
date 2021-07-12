@@ -3,7 +3,7 @@
 
 .l-section-initial {
     align-items: flex-start;
-    background: url("../img/images/driver-image.jpg") no-repeat center center / cover fixed;
+    background: url("../img/images/home-image.jpg") no-repeat center center / cover fixed;
     border-bottom: 15px solid var(--color-pink);
     border-radius: 0 0 30% 0;
     display: flex;

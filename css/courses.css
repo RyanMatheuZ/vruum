@@ -3,7 +3,7 @@
 
 .l-section-initial {
     align-items: flex-start;
-    background: url("../img/images/street-image.jpg") no-repeat center center / cover fixed;
+    background: url("../img/images/courses-image.svg") no-repeat center center / cover;
     border-bottom: 15px solid var(--color-pink);
     border-radius: 0 0 30% 0;
     display: flex;
@@ -18,12 +18,12 @@
 .l-section-initial hr {
     background-color: var(--color-white);
     border: 2px solid var(--color-white);
-    margin-left: 0.5rem;
+    margin: 0 0 0 0.5rem;
 }
 .l-section-initial .crumb-path {
-    background-color: var(--matte-pink);
+    background-color: var(--color-pink);
     border-radius: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0 0 0;
     padding: 0.5rem;
 }
 .l-section-initial .crumb-path p {
