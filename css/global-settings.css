@@ -169,6 +169,8 @@ ol {
     padding: 2.5rem;
     position: fixed;
     top: 0;
+    transform: translateX(-1000px);
+    transition: 1s cubic-bezier(0, 1.01, 1, 1);
     visibility: hidden;
     width: 30%;
     z-index: 2;

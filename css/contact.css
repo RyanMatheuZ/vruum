@@ -137,4 +137,14 @@
     .l-section-initial hr {
         margin: 0 auto;
     }
+
+    .l-section-contact .m-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .l-section-contact .m-form .m-form-data {
+        width: 100%;
+    }
 }

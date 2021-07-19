@@ -1,9 +1,25 @@
-const activateMenuButton = document.getElementById('activate-menu-button')
-activateMenuButton.addEventListener('click', () => {
-    document.getElementById('mobile-navigation-bar').style.visibility = 'visible'
+const exitMenuButton = document.getElementById('exit-menu-button')
+const mobileNavigationBar = document.getElementById('mobile-navigation-bar')
+const mobileNavigationBarLink = document.querySelectorAll('.m-mobile-navigation-bar-link')
+
+document.getElementById('activate-menu-button').addEventListener('click', () => {
+    exitMenuButton.classList.add('is-d-inline-block')
+    exitMenuButton.classList.remove('is-d-none')
+
+    mobileNavigationBar.classList.add('is-active-animation-mobile-bar')
+
+    mobileNavigationBarLink.forEach(element => {
+        element.classList.add('is-d-inline-block')
+        element.classList.remove('is-d-none')
+    })
 })
 
-const exitMenuButton = document.getElementById('exit-menu-button')
-exitMenuButton.addEventListener('click', () => {
-    document.getElementById('mobile-navigation-bar').style.visibility = 'hidden'
+document.getElementById('exit-menu-button').addEventListener('click', () => {
+    exitMenuButton.classList.add('is-d-none')
+
+    mobileNavigationBar.classList.remove('is-active-animation-mobile-bar')
+
+    mobileNavigationBarLink.forEach(element => {
+        element.classList.add('is-d-none')
+    })
 })

@@ -1,0 +1,20 @@
+.l-header nav .is-visible,
+.l-header nav .m-mobile-navigation-bar .is-hidden {
+    visibility: hidden;
+}
+
+.l-header nav .is-d-none,
+.l-header nav .m-mobile-navigation-bar .is-d-none {
+    display: none;
+}
+
+.l-header nav .is-d-inline-block,
+.l-header nav .m-mobile-navigation-bar .is-d-auto {
+    display: auto;
+}
+
+.l-header nav .is-active-animation-mobile-bar {
+    transform: translateX(calc(-1000px + 1000px));
+    transition: 1s cubic-bezier(0, 1.01, 1, 1);
+    visibility: visible;
+}
