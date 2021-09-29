@@ -134,7 +134,7 @@
 }
 
 @media (max-width: 800px) {
-    .l-section-initial {
+    .l-section-initial .m-box {
         align-items: center;
         justify-content: center;
         padding: 0;
