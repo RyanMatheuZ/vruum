@@ -5,75 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Aprenda a dirigir com confiança. Conte conosco, Autoescola Vruum!">
+    <meta name="subject" content="Venda de cursos de direção">
+    <meta name="topic" content="Autoescola">
+    <meta name="url" content="https://ryanmatheuz.github.io/vruum/">
+    <meta name="creator" content="Ryan Matheus de Oliveira">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="theme-color" content="#A00117">
+
     <title>Início | Vruum</title>
-    <link rel="shortcut icon" href="./img/logo/vruum-favicon.svg" type="image/x-icon">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo/vruum-favicon.svg" type="image/svg">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/global-settings.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/home.css">
+
+    <!-- Scripts -->
+    <script src="./js/animations.js" defer></script>
 </head>
 
 <body>
     <header class="l-header">
-        <div class="m-logo">
-            <a href="./index.html"><img src="./img/logo/vruum-logo.svg" alt="Logo Vruum"></a>
+        <div class="m-box">
+            <div class="m-logo">
+                <a href="./index.html"><img src="./img/logo/vruum-logo.svg" alt="Logo Vruum"></a>
+            </div>
+    
+            <nav>
+                <ul class="m-desktop-navigation-bar">
+                    <li class="m-desktop-navigation-bar-link is-current-page-marking">
+                        <a class="is-current-page-color" href="./index.html">Início</a>
+                    </li>
+                    <li class="m-desktop-navigation-bar-link">
+                        <a href="./pages/courses.html">Cursos</a>
+                    </li>
+                    <li class="m-desktop-navigation-bar-link">
+                        <a href="./pages/about.html">Sobre</a>
+                    </li>
+                    <li class="m-desktop-navigation-bar-link">
+                        <a href="./pages/contact.html">Contato</a>
+                    </li>
+                </ul>
+    
+                <button id="activate-menu-button" class="m-activate-menu-button">
+                    <img src="./img/icons/menu-burger-icon.svg" alt="Menu">
+                </button>
+    
+                <ul id="mobile-navigation-bar" class="m-mobile-navigation-bar">
+                    <li>
+                        <button id="exit-menu-button" class="m-exit-menu-button">
+                            <img src="./img/icons/exit-button-icon.svg" alt="Sair">
+                        </button>
+                    </li>
+                    <li class="m-mobile-navigation-bar-title">Menu</li>
+                    <li class="m-mobile-navigation-bar-link">
+                        <a href="./index.html">Início</a>
+                    </li>
+                    <li class="m-mobile-navigation-bar-link">
+                        <a href="./pages/courses.html">Cursos</a>
+                    </li>
+                    <li class="m-mobile-navigation-bar-link">
+                        <a href="./pages/about.html">Sobre</a>
+                    </li>
+                    <li class="m-mobile-navigation-bar-link">
+                        <a href="./pages/contact.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <nav>
-            <ul class="m-desktop-navigation-bar">
-                <li class="m-desktop-navigation-bar-link is-current-page-marking">
-                    <a class="is-current-page-color" href="./index.html">Início</a>
-                </li>
-                <li class="m-desktop-navigation-bar-link">
-                    <a href="./pages/courses.html">Cursos</a>
-                </li>
-                <li class="m-desktop-navigation-bar-link">
-                    <a href="./pages/about.html">Sobre</a>
-                </li>
-                <li class="m-desktop-navigation-bar-link">
-                    <a href="./pages/contact.html">Contato</a>
-                </li>
-            </ul>
-
-            <button id="activate-menu-button" class="m-activate-menu-button">
-                <img src="./img/icons/menu-burger-icon.svg" alt="Menu">
-            </button>
-
-            <ul id="mobile-navigation-bar" class="m-mobile-navigation-bar">
-                <li>
-                    <button id="exit-menu-button" class="m-exit-menu-button">
-                        <img src="./img/icons/exit-button-icon.svg" alt="Sair">
-                    </button>
-                </li>
-                <li class="m-mobile-navigation-bar-title">Menu</li>
-                <li class="m-mobile-navigation-bar-link">
-                    <a href="./index.html">Início</a>
-                </li>
-                <li class="m-mobile-navigation-bar-link">
-                    <a href="./pages/courses.html">Cursos</a>
-                </li>
-                <li class="m-mobile-navigation-bar-link">
-                    <a href="./pages/about.html">Sobre</a>
-                </li>
-                <li class="m-mobile-navigation-bar-link">
-                    <a href="./pages/contact.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <section class="l-section-initial">
-            <article class="m-call-to-action-1">
-                <h1>Aprenda a dirigir <br> com confiança!</h1>
-
-                <p>Venha conhecer conhecer nosso <br> incrível método de ensino.</p>
-
-                <div class="m-buttons-cta">
-                    <a class="m-button-see-more" href="#features">Veja mais</a>
-                    <a class="m-button-contact" href="./pages/contact.html">Contato</a>
-                </div>
-            </article>
+            <div class="m-box">
+                <article class="m-call-to-action-1">
+                    <h1>Aprenda a dirigir <br> com confiança!</h1>
+    
+                    <p>Venha conhecer conhecer nosso <br> incrível método de ensino.</p>
+    
+                    <div class="m-buttons-cta">
+                        <a class="m-button-see-more" href="#features">Veja mais</a>
+                        <a class="m-button-contact" href="./pages/contact.html">Contato</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section id="features" class="l-section-features">
@@ -314,8 +333,6 @@
             <p>&copy; 2021 Vruum - Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script src="./js/animations.js"></script>
 </body>
 
 </html>

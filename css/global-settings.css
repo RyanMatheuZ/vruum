@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap');
 /* Were imported: Regular 400, Semi-bold 600, Bold 700. */
 
+:root {
+    --color-black: #000000;
+    --color-blue: #111A39;
+    --color-gray-light: #F3F3F3;
+    --color-gray-medium: #888888;
+    --color-pink: #E71D4F;
+    --color-white: #FFFFFF;
+    --dark-pink: #991334;
+    --matte-black:#000000AB;
+    --matte-pink: #E71D4FAB;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +26,15 @@ body {
     height: 100%;
     scroll-behavior: smooth;
     width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 h2,
@@ -69,27 +90,19 @@ ol {
     justify-content: center;
 }
 
-:root {
-    --color-black: #000000;
-    --color-blue: #111A39;
-    --color-gray-light: #F3F3F3;
-    --color-gray-medium: #888888;
-    --color-pink: #E71D4F;
-    --color-white: #FFFFFF;
-    --dark-pink: #991334;
-    --matte-black:#000000AB;
-    --matte-pink: #E71D4FAB;
-}
-
 /* ========== HEADER Settings ========== */
 /* ----- DESKTOP MENU settings ----- */
 .l-header {
-    align-items: center;
     background-color: var(--color-white);
+}
+.l-header .m-box {
+    align-items: center;
     display: flex;
     height: 6.5rem;
     justify-content: space-between;
-    padding: 0 5rem;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 1rem 5rem;
 }
 .l-header .m-logo {   
     height: 80px;
@@ -199,7 +212,7 @@ ol {
 }
 
 @media (max-width: 800px) {
-    .l-header { 
+    .l-header .m-box { 
         padding: 0 2%; 
     }
     .l-header .m-logo a {
@@ -230,6 +243,7 @@ ol {
     background-color: var(--color-blue);
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     justify-content: center;
 }
 .l-footer article {

@@ -2,12 +2,16 @@
 /* The styles/settings of HEADER and FOOTER can be found in the global-settings.css file */
 
 .l-section-initial {
-    align-items: flex-start;
     background: url("../img/images/home-image.jpg") no-repeat center center / cover fixed;
     border-bottom: 15px solid var(--color-pink);
     border-radius: 0 0 30% 0;
+}
+.l-section-initial .m-box {
+    align-items: flex-start;
     display: flex;
     height: 400px;
+    margin: 0 auto;
+    max-width: 1300px;
     padding: 2.5rem 0 0 5rem;
 }
 .l-section-initial .m-call-to-action-1 h1 {
