@@ -1,9 +1,9 @@
-<img width="80" src="./img/logo/vruum-logo.svg" alt="Logo Vruum">
+<img width="80" src="./img/logo/vruum-logo.svg" alt="Logo Vruum" title="Logo Vruum">
 
 # Vruum
 
 ### About
-Vruum is a personal project, about a fictional driving school.
+Vruum is a personal project, about a fictitious driving school.
 
 ### Technologies / Softwares
 - HTML 5
